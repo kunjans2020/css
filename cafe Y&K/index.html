@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <meta charset="UFT-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>Cafe Y&K</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial,sans-serif;
+                background: #f8f5f2;
+            }
+            header{
+                background: #4b2e2e;
+                color: white;
+                padding: 15px;
+                text-align: center;
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                background: #6f4e37;
+            }
+            nav a{
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+            nav a:hover{
+                background: #4b2e2e;
+            }
+            .hero{
+                height: 300px;
+                background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center/cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 2em;
+                font-weight: bold;
+            }
+            .container{
+                padding: 20px;
+                text-align: center;
+            }
+            .menu{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+                gap: 20px;
+            }
+            .card{
+                background: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            }
+            button{
+                background: #6f4e37;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover{
+                background: #4b2e2e;
+            }
+            footer{
+                background: #4b2e2e;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+        </style>
+       </head>
+
+       <body>
+        <header>
+            <h1>Cafe Y&K</h1>
+            <p>By Kunjan Singh</p>
+            <p>Fresh Coffee & Cozy Vibes</p>
+            
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hero">
+            Welcome to cafe Y&K
+        </div>
+
+        <div class="container" id="contact">
+            <h2>Our Menu</h2>
+            <div class="menu" id="menuitems"></div>
+        </div>
+        
+        <hr/>
+
+        <div class="container" id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: cafeY&K@gmail.com</p>
+            <p>Phone:+916354198378,+919429446480</p>
+            <p><Address>Vip Road,Vesu,Surat</Address></p>
+        </div>
+
+        <footer>
+            <p> 2026 Cafe Y&K</p>
+            <p>Vist Again , Thank You</p>
+        </footer>
+
+        <script>
+            const items = [{name:"Espresso",price:"120"}
+                ,{name:"Cappuccino",price:"150"},
+                {name:"Iced latte",price:"180"},
+                {name:"Mocha",price:"200"},
+                {name:"Americano",price:"150"},
+                {name:"latte",price:"170"},
+                {name:"Macchiato",price:"160"},
+                {name:"Flat white",price:"140"},
+                {name:"cold brew",price:"190"},
+                {name:"Frappuccino",price:"200"},
+                {name:"Cold coffee",price:"150"},
+                {name:"Hot chocolate",price:"120"}
+            ];
+            const menuContainer = document.getElementById('menuitems');
+            
+            items.forEach(item => {
+              const div = document.createElement("div");
+              div.classList.add("card");
+              div.innerHTML = `
+                <h3>${item.name}</h3>
+                <p>${item.price}</p>
+                <button onclick="orderItem('${item.name}')">Order</button>
+            `;
+            menuContainer.appendChild(div);
+       });
+
+            function OrderItem(item){
+                alert('you ordered: ${item}');
+            }
+        </script>
+
+
+            
+
+        
+
+
+       </body>
+</html>
