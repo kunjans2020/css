@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+h3{
+    color: brown;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+#About{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+#Education{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+#Skills{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+#Experience{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+#Contact{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
