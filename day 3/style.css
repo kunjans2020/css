@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
+
+body{
+    background-color: lightgrey;
+}
+
+h1{
+    text-align: center;
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: sticky;
+    top: 0;
+}
+h2{
+    text-decoration: underline;
+}
+p{
+    font-size: 20px;
+    color: black;
+    font-family:"Playwrite DE SAS", cursive; ;
+}
+ul{
+    font-size: 20px;
+}
