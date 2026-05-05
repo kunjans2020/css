@@ -10,6 +10,8 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: sticky;
     top: 0;
+    background-color: black;
+    font-size: 50px;
 }
 h2{
     text-decoration: underline;
@@ -21,4 +23,11 @@ p{
 }
 ul{
     font-size: 20px;
+}
+.T{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.F{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
