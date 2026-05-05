@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.frist{
+    width: 400px;
+    height: 500px;
+    background-color: chocolate;
+    padding: 10px;
+}
+.second{
+    width: 250px;
+    height: 350px;
+    background-color: burlywood;
+}
+.third{
+    width: 250px;
+    height: 300px;
+    background-color: crimson;
+}
