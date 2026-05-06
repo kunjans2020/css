@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap');
 
 body{
-    background-color: lightgrey;
+    background-color: black;
 }
 
 h1{
@@ -10,19 +10,21 @@ h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: sticky;
     top: 0;
-    background-color: black;
     font-size: 50px;
+    background-color: yellow;
 }
 h2{
     text-decoration: underline;
+    color: white;
 }
 p{
     font-size: 20px;
-    color: black;
+    color: white;
     font-family:"Playwrite DE SAS", cursive; ;
 }
 ul{
     font-size: 20px;
+    color: white;
 }
 .T{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -30,4 +32,16 @@ ul{
 .F{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+}
+.G{
+    color: white;
+}
+h3{
+    color: white;
+}
+div{
+    color: white;
+}
+.F{
+    color: red;
 }
