@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Own Home</title>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#fff;
+      color:#333;
+    }
+
+    .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:#f3f3f3;
+      padding:12px 20px;
+      border-bottom:1px solid #ddd;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+    }
+
+    .logo{
+      font-size:18px;
+      font-weight:bold;
+    }
+
+    .nav-links{
+      display:flex;
+      list-style:none;
+    }
+
+    .nav-links li{
+      margin-right:18px;
+    }
+
+    .nav-links a{
+      text-decoration:none;
+      color:#333;
+      padding:10px 14px;
+      display:block;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active{
+      background:#e5e5e5;
+    }
+
+    .profile img{
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      object-fit:cover;
+    }
+
+    .hero{
+      background:#e9e9e9;
+      padding:70px 60px;
+    }
+
+    .hero h1{
+      font-size:72px;
+      font-weight:300;
+      margin-bottom:20px;
+    }
+
+    .hero h1 i{
+      margin-right:15px;
+    }
+
+    .hero p{
+      font-size:22px;
+      line-height:1.5;
+      max-width:900px;
+      margin-bottom:30px;
+    }
+
+    .hero button{
+      background:#337ab7;
+      color:#fff;
+      border:none;
+      padding:15px 28px;
+      font-size:24px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    .hero button:hover{
+      background:#286090;
+    }
+
+    .container{
+      width:90%;
+      margin:auto;
+      padding:50px 0;
+    }
+
+    .cards{
+      display:flex;
+      gap:40px;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      flex:1;
+      min-width:250px;
+    }
+
+    .card h2{
+      font-size:32px;
+      margin-bottom:15px;
+      font-weight:400;
+    }
+
+    .card h2 i{
+      margin-right:10px;
+    }
+
+    .card p{
+      font-size:18px;
+      line-height:1.6;
+      margin-bottom:20px;
+      color:#444;
+    }
+
+    .card button{
+      padding:10px 20px;
+      font-size:18px;
+      border:1px solid #ccc;
+      background:#fff;
+      border-radius:4px;
+      cursor:pointer;
+    }
+
+    .card button:hover{
+      background:#f3f3f3;
+    }
+
+    hr{
+      margin-top:50px;
+      border:none;
+      border-top:1px solid #ddd;
+    }
+
+    footer{
+      padding:20px 0;
+      color:#666;
+      font-size:15px;
+    }
+
+    @media(max-width:768px){
+
+      .navbar{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .nav-links{
+        flex-wrap:wrap;
+        margin-top:10px;
+      }
+
+      .hero{
+        padding:40px 20px;
+      }
+
+      .hero h1{
+        font-size:48px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .cards{
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+
+    <div class="nav-left">
+      <div class="logo">MY OWN HOME</div>
+
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Suppliers</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Membership</a></li>
+        <li><a href="#">Site Content</a></li>
+      </ul>
+    </div>
+
+    <div class="profile">
+      <img src="https://i.pravatar.cc/100" alt="profile">
+    </div>
+
+  </nav>
+
+  <section class="hero">
+
+    <h1><i class="fa-solid fa-earth-americas"></i>Hello, world!</h1>
+
+    <p>
+      This is a template for a simple buy page. It includes a large callout
+      called a jumbotron and three supporting items to purchase. Use it as a
+      starting point to create something more unique.
+    </p>
+
+    <button>Learn more »</button>
+
+  </section>
+  
+  <div class="container">
+
+    <div class="cards">
+
+      <div class="card">
+        <h2><i class="fa-solid fa-crosshairs"></i>Heading</h2>
+
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+          tellus ac cursus commodo, tortor mauris condimentum nibh.
+        </p>
+
+        <button>View details »</button>
+      </div>
+
+      <div class="card">
+        <h2><i class="fa-solid fa-gift"></i>Heading</h2>
+
+        <p>
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+          tellus ac cursus commodo, tortor mauris condimentum nibh.
+        </p>
+
+        <button>View details »</button>
+      </div>
+
+      <div class="card">
+        <h2><i class="fa-solid fa-calendar-days"></i>Heading</h2>
+
+        <p>
+          Donec sed odio dui. Cras justo odio, dapibus ac facilisis in,
+          egestas eget quam. Vestibulum id ligula porta felis euismod semper.
+        </p>
+
+        <button>View details »</button>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+      © 2018 MyCompany. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+</html>
