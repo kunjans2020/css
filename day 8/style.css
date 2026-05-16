@@ -23,18 +23,18 @@ nav {
   align-items: center;
   color: white;
   text-shadow: 0 0 10px orange;
-  transition: 0,3s;
+  transition: 0.3s;
 }
 .nav-heading:hover{
     transform: scale(1.1);
+    color: red;
 }
 .nav-heading {
   align-items: center;
   color: white;
   text-decoration: none;
   padding: 0 10px;
-  transition: 0,3s;
-  box-shadow: 0 4px 10px;
+  transition: 0.3s;
 }
 .nav-profile-name {
   align-items: center;
@@ -44,6 +44,7 @@ nav {
 }
 .nav-profile-name:hover{
     transform: scale(1.1);
+    color: black;
 }
 .nav-profile-image {
   width: 30px;
@@ -67,7 +68,7 @@ h3 {
   padding: 10px;
   line-height: 30px;
   background-color: white;
-  transition: 0,3s;
+  transition: 1s;
   box-shadow: 0 4px 10px;
 }
 .menu-head {
@@ -85,8 +86,7 @@ h3 {
   margin-top: 2%;
 }
 main {
-  display: flex;
-  transition: 0,3s;
+    display: flex;
 }
 .head:hover{
     transform: scale(1.1);
@@ -188,6 +188,7 @@ main {
 .search-bar:hover{
     background: skyblue;
     transform: scale(1.1);
+    color: black;
 }
 .main-icon{
     font-size: 20px;
@@ -197,6 +198,7 @@ main {
 }
 .main-icon:hover{
     transform: scale(1.1);
+    color: blue;
 }
 .fillter-by{
     font-size: 15px;
