@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+.left-box{
+    width: 20%;
+    height: 80%;
+    background-color: greenyellow;
+}
