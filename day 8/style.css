@@ -160,7 +160,8 @@ main {
 .section-input{
     width: 1000px;
     font-size: 20px;
-    text-align: center;
+    text-align: center;z
+    margin-left: 1%;
 }
 
 
