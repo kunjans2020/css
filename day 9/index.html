@@ -1,50 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Y&K Portal</title>
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="Portal">
+        <i class="ri-building-fill"></i>
+        <span>Y&K Portal</span>
+      </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" placeholder="Search people,leave,policies..." />
+      </div>
+      <div class="nav-Profile-image">
+        <i class="ri-notification-2-line"></i>
+        <img src="profileimage.jpg" alt="" />
+        <div>
+          <h3>Kunal Singh</h3>
+          <p>Full Stack Developer</p>
+        </div>
+      </div>
+    </nav>
+    <div class="paragraph">
+      <h2>Welcome Back,Kunal</h2>
+      <p>Manage your leave and track your time off</p>
+    </div>
     <main>
-        <section class="left-box">
-            <div>
-                <i class="ri-building-fill"></i>
-                <span>Y&K Portal</span>
+      <section class="left-box">
+        <div class="portal-menu">
+          <i class="ri-dashboard-horizontal-line"></i>
+          <span>Dashboard</span>
+        </div>
+        <div class="portal-menu">
+          <i class="ri-timer-2-line"></i>
+          <span>Attendence</span>
+        </div>
+        <div class="portal-menu">
+          <i class="ri-calendar-2-line"></i>
+          <span>leave</span>
+        </div>
+        <div class="portal-menu">
+          <i class="ri-file-list-3-line"></i>
+          <span>Pay Slip</span>
+        </div>
+        <div class="portal-menu">
+          <i class="ri-file-line"></i>
+          <span>Document</span>
+        </div>
+        <div class="portal-menu">
+          <i class="ri-user-line"></i>
+          <span>Profile</span>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <div class="portal-menu">
+          <i class="ri-settings-3-line"></i>
+          <span>Setting</span>
+        </div>
+        <div class="Lagout">
+          <i class="ri-logout-box-r-line"></i>
+          <span>Lagout</span>
+        </div>
+      </section>
+      <section class="right-box">
+        <h2 class="leave-title">Leave Summary</h2>
+
+        <div class="leave-grid">
+          <div class="leave-card annual">
+            <div class="leave-left">
+              <div class="icon">📁</div>
+              <div class="leave-info">
+                <h4>Annual Leave</h4>
+                <div class="days">12/18</div>
+                <p>days remaining</p>
+              </div>
             </div>
-            <br/>
-            <div>
-                <i class="ri-dashboard-horizontal-line"></i>
-                <span>Dashboard</span>
+            <div class="menu">⋮</div>
+          </div>
+
+          <div class="leave-card sick">
+            <div class="leave-left">
+              <div class="icon">📁</div>
+              <div class="leave-info">
+                <h4>Sick Leave</h4>
+                <div class="days">6/10</div>
+                <p>days remaining</p>
+              </div>
             </div>
-            <div>
-                <i class="ri-timer-2-line"></i>
-                <span>Attendence</span>
+            <div class="menu">⋮</div>
+          </div>
+
+          <div class="leave-card casual">
+            <div class="leave-left">
+              <div class="icon">📁</div>
+              <div class="leave-info">
+                <h4>Casual Leave</h4>
+                <div class="days">2/5</div>
+                <p>days remaining</p>
+              </div>
             </div>
-            <div>
-                <i class="ri-calendar-2-line"></i>
-                <span>leave</span>
+            <div class="menu">⋮</div>
+          </div>
+
+          <div class="leave-card unpaid">
+            <div class="leave-left">
+              <div class="icon">📁</div>
+              <div class="leave-info">
+                <h4>Unpaid Leave</h4>
+                <div class="days">Available</div>
+                <p>When Needed</p>
+              </div>
             </div>
-            <div>
-                <i class="ri-file-list-3-line"></i>
-                <span>Pay Slip</span>
+            <div class="menu">⋮</div>
+          </div>
+        </div>
+        <button class="btn">Apply Leave</button>
+        <div class="today-status">
+          <h2 class="today-title">Today Status</h2>
+          <div class="status-item">
+            <div class="icon-box">🕔</div>
+            <div class="status-content">
+              <h4>Status</h4>
+              <p>Working From Office</p>
             </div>
-            <div>
-                <i class="ri-file-line"></i>
-                <span>Document</span>
+          </div>
+          <div class="status-item">
+            <div class="icon-box">🕔</div>
+            <div class="status-content">
+              <h4>Working Hour</h4>
+              <p>9:00 am to 6:00 pm</p>
             </div>
-            <div>
-                <i class="ri-user-line"></i>
-                <span>Profile</span>
+          </div>
+          <div class="status-item">
+            <div class="icon-box">🕔</div>
+            <div class="status-content">
+              <h4>Entry Time</h4>
+              <p>9:00 am</p>
             </div>
-            <br/>
-        </section>
-        <section></section>    
+          </div>
+        </div>
+        <div class="quick-action-container">
+          <h2 class="title">Quick Action</h2>
+
+          <div class="action-grid">
+            <div class="action-card blue-card">
+              <div class="icon-box">📅</div>
+              <div class="card-content">
+                <h3>Apply Leave</h3>
+                <p>Request time off</p>
+              </div>
+            </div>
+            <div class="action-card green-card">
+              <div class="icon-box">📄</div>
+              <div class="card-content">
+                <h3>My Leave History</h3>
+                <p>View all request</p>
+              </div>
+            </div>
+            <div class="action-card yellow-card">
+              <div class="icon-box">📋</div>
+              <div class="card-content">
+                <h3>Apply Leave</h3>
+                <p>Request time off</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
