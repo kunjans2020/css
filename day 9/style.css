@@ -7,7 +7,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: lightgray;
+  background-color: rgb(248, 248, 248);
 }
 main {
   display: flex;
@@ -23,9 +23,10 @@ main {
 }
 .Portal i{
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   background-color: blue;
   border-radius: 50px;
+  padding: 10px;
 }
 .Portal span{
   font-size: 30px;
@@ -34,6 +35,9 @@ main {
   color: red;
   font-size: 20px;
   transition: 0.3s;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 8px;
 }
 .Lagout:hover{
   transform: scale(1.1);
@@ -82,6 +86,9 @@ nav {
 .nav-Profile-image div{
   transform: translate(65px,0px);
 }
+.nav-Profile-image div p{
+  color: rgb(30, 30, 30);
+}
 .ri-notification-2-line {
   font-size: 24px;
   transform: translate(70px,0px);
@@ -90,17 +97,22 @@ nav {
   font-size: 20px;
   transition: 0.3s;
   overflow: hidden;
+  color:rgb(30, 30, 30);
+  margin: 10px;
+  padding: 8px;
 }
 .portal-menu:hover{
   transform: scale(1.1);
   background-color: lightblue;
+  border-radius: 8px;
 }
 .portal-menu:first-child {
   background-color: lightblue;
+  border-radius: 8px;
 }
 .paragraph {
   padding: 15px;
-  transform: translate(210px, 0px);
+  transform: translate(225px, 0px);
   display: inline-block;
 }
 .right-box {
@@ -152,13 +164,12 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
   font-weight: bold;
-  font-size: 25 px;
+  font-size: 25px;
 }
 
 .leave-info h4 {
-  font-size: 16px;
+  font-size: 14px;
   color: #555;
   margin-bottom: 6px;
 }
@@ -184,7 +195,7 @@ nav {
   background: #eef5ff;
 }
 
-.annual .icon {
+.annual .ri-folder-6-line {
   background: #d6e8ff;
   color: #4d8dff;
 }
@@ -193,7 +204,7 @@ nav {
   background: #fff8e7;
 }
 
-.sick .icon {
+.sick .ri-folder-6-line {
   background: #ffe8a3;
   color: #e0a400;
 }
@@ -202,7 +213,7 @@ nav {
   background: #ecfff4;
 }
 
-.casual .icon {
+.casual .ri-folder-6-line {
   background: #c9f5db;
   color: #28b463;
 }
@@ -211,7 +222,7 @@ nav {
   background: #fff0f2;
 }
 
-.unpaid .icon {
+.unpaid .ri-folder-6-line {
   background: #ffd6dc;
   color: #ff5c77;
 }
@@ -254,6 +265,34 @@ nav {
   gap: 16px;
   padding: 20px 0;
   border-bottom: 1px solid lightgray;
+  margin: 10px;
+  border-radius: 8px;
+}
+.blue-card {
+  background: #eef6ff;
+}
+
+.blue-card .ri-timer-2-line {
+  background: #d6e9ff;
+  color: #2f80ed;
+}
+
+.green-card {
+  background: #edf9f1;
+}
+
+.green-card .ri-timer-2-line {
+  background: #d7f5df;
+  color: #27ae60;
+}
+
+.yellow-card {
+  background: #fff8e8;
+}
+
+.yellow-card .ri-timer-2-line {
+  background: #ffeebd;
+  color: #d68910;
 }
 .status-item:last-child {
   border-bottom: none;
@@ -266,6 +305,8 @@ nav {
   align-items: center;
   justify-content: center;
   font-size: 25px;
+  background-color: lightgreen;
+  margin: 4px;
 }
 .status-content h4 {
   font-size: 15px;
@@ -308,7 +349,7 @@ nav {
   min-height: 95px;
 }
 
-.ri-file-2-line {
+.ri-file-2-line,.ri-calendar-event-line {
   width: 46px;
   height: 46px;
   border-radius: 8px;
@@ -334,7 +375,7 @@ nav {
   background: #eef6ff;
 }
 
-.blue-card .icon-box {
+.blue-card .ri-calendar-event-line {
   background: #d6e9ff;
   color: #2f80ed;
 }
@@ -343,7 +384,7 @@ nav {
   background: #edf9f1;
 }
 
-.green-card .icon-box {
+.green-card .ri-file-2-line {
   background: #d7f5df;
   color: #27ae60;
 }
@@ -352,7 +393,7 @@ nav {
   background: #fff8e8;
 }
 
-.yellow-card .icon-box {
+.yellow-card .ri-file-2-line {
   background: #ffeebd;
   color: #d68910;
 }
