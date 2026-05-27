@@ -14,26 +14,30 @@ main {
 }
 .left-box {
   width: 14%;
-  height: 760px;
+  height: 745px;
   background-color: white;
   line-height: 40px;
-  padding: 7px 10px;
+  padding: 10px 20px;
   justify-content: start;
   transform: translate(0px, -76px);
 }
-.Portal{
-  color: blue;
-  font-size: 20px;
+.Portal i{
+  color: white;
+  font-size: 40px;
+  background-color: blue;
+  border-radius: 50px;
+}
+.Portal span{
+  font-size: 30px;
 }
 .Lagout {
   color: red;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.3s;
 }
 .Lagout:hover{
   transform: scale(1.1);
-  background-color: #255ed0;
-}
+  background-color: lightblue}
 nav {
   padding: 10px 20px;
   width: 100%;
@@ -48,6 +52,7 @@ nav {
   align-items: center;
   width: 40%;
   height: 60px;
+  transform: translate(-170px,0px);
 }
 
 .search-box input {
@@ -56,10 +61,11 @@ nav {
   padding: 10px 10px 10px 35px;
   font-size: 16px;
   margin-left: 0.1%;
+  border-radius: 10px;
 }
-
-.search-icon {
-  transform: translate(30px, -4px);
+.search-box i{
+  font-size: 25px;
+  transform: translate(30px,0px); 
 }
 .nav-Profile-image {
   /* width: 10%; */
@@ -71,22 +77,26 @@ nav {
 .nav-Profile-image img {
   border-radius: 50%;
   height: 40px;
+  transform: translate(70px,0px);
+}
+.nav-Profile-image div{
+  transform: translate(65px,0px);
 }
 .ri-notification-2-line {
   font-size: 24px;
+  transform: translate(70px,0px);
 }
 .portal-menu {
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.3s;
   overflow: hidden;
 }
 .portal-menu:hover{
   transform: scale(1.1);
-  background-color: #255ed0;
+  background-color: lightblue;
 }
 .portal-menu:first-child {
-  background-color: #255ed0;
-  border-radius: 8px;
+  background-color: lightblue;
 }
 .paragraph {
   padding: 15px;
@@ -94,11 +104,12 @@ nav {
   display: inline-block;
 }
 .right-box {
-  width: 65%;
+  width: 55%;
   height: 465px;
   background-color: white;
-  transform: translate(10px, 0px);
+  transform: translate(20px, 0px);
   padding: 15px;
+  border-radius: 10px;
 }
 .leave-title {
   font-size: 22px;
@@ -114,10 +125,11 @@ nav {
 }
 
 .leave-card {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 18px;
+  padding: 10px;
   border-radius: 10px;
   min-height: 150px;
   align-items: center;
@@ -130,10 +142,10 @@ nav {
 
 .leave-left {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
-.icon {
+.ri-folder-6-line {
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -142,6 +154,7 @@ nav {
   justify-content: center;
   font-size: 18px;
   font-weight: bold;
+  font-size: 25 px;
 }
 
 .leave-info h4 {
@@ -222,12 +235,13 @@ nav {
   background-color: lightgreen;
 }
 .today-status {
-  width: 30%;
+  width: 43%;
   height: 465px;
   background-color: white;
   margin: 1% 99%;
   transform: translate(35px, -463px);
   padding: 10px;
+  border-radius: 10px;
 }
 .today-title {
   font-size: 22px;
@@ -244,14 +258,14 @@ nav {
 .status-item:last-child {
   border-bottom: none;
 }
-.icon-box {
+.ri-timer-2-line {
   width: 42px;
   height: 42px;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 25px;
 }
 .status-content h4 {
   font-size: 15px;
@@ -274,7 +288,6 @@ nav {
 }
 
 .title {
-  font-size: 34px;
   font-weight: 700;
   color: #333;
   margin-bottom: 22px;
@@ -295,7 +308,7 @@ nav {
   min-height: 95px;
 }
 
-.icon-box {
+.ri-file-2-line {
   width: 46px;
   height: 46px;
   border-radius: 8px;
