@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+}
+.container-1{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(67, 67, 67);
+}
+.box-1 h1{
+    text-align: center;
+}
+.box-1 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box1{
+    width: 96%;
+    height: 25vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.container1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-2{
+    width: 100%;
+    height: 45vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-2 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-2 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box2{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.container2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-3{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-3 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-3 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box3{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.container3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-4{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-4 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-4 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box4{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.container4{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-5{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-5 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-5 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box5{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.container5{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-6{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-6 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-6 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box6{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container6{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-7{
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-7 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-7 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box7{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+.container7{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-8{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-8 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-8 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box8{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.container8{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-9{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-9 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-9 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box9{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.container9{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-10{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-10 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-10 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box10{
+    width: 96%;
+    height: 28vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    align-items: stretch;
+}
+.container10{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.container-11{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-11 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-11 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box11{
+    width: 96%;
+    height: 40vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    align-items: space-between;
+}
+.container11{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.container-12{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-12 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-12 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box12{
+    width: 96%;
+    height: 40vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    align-items: space-around;
+}
+.container12{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.container-13{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(67, 67, 67);
+    margin-top: 20px;
+}
+.box-13 h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.box-13 p{
+    font-size: 20px;
+    margin: 10px;
+}
+.container-box13{
+    width: 96%;
+    height: 40vh;
+    background-color: rgb(242, 242, 92);
+    margin: 20px;
+    display: flex;
+    align-items: space-evenly;
+}
+.container13{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
