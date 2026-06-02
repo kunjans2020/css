@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Amazon Ember';
+  src: url('Assets/fonts/Amazon\ Ember.ttf') format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Amazon Ember'
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(1, 1, 30);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav-bar {
+  position: absolute;
+  position: fixed;
+  width: 90%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+.nav-bar a,.Vertical {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+.left-nav > img{
+    height: 20px;
+    margin-right: 10px;
+}
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+.ri-gallery-view-2{
+    margin-right: 5px;
+}
+.prime-logo:hover{
+    background-color: rgb(63, 63, 241);
+}
+.prime{
+    height: 20px;
+}
+.prime-logo{
+    height: 40px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-nav a:hover{
+    background-color: rgb(245, 245, 245);
+    color: black;
+}
+.ri-search-line,.ri-grid-fill{
+    padding: 10px;
+    border-radius: 50px;
+}
+.ri-search-line:hover,.ri-grid-fill:hover{
+    background-color: rgb(245, 245, 245);
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+.ri-bookmark-line{
+    padding: 10px;
+    border-radius: 50px;
+}
+.ri-bookmark-line:hover{
+    background-color: rgb(245, 245, 245);
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+.ri-user-line{
+    padding: 10px;
+    border-radius: 50px;
+}
+.ri-user-line:hover{
+    background-color: rgb(73, 73, 236);
+    color: black;
+    padding: 10px;
+    border-radius: 50px;
+}
+.hero{
+  height: 95%;
+  background-image: url(https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_SpiderNoir_S1/41d6d8a9-d08a-400a-bf0c-43b6431decb6._UR3840,1440_SX2160_FMwebp_.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero-content{
+    padding: 0 0 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.hero-prime-logo{
+    height: 35px;
+    display: block;
+    margin-left: 60px;
+}
+.hero-Movie-name{
+    height: 180px;
+    display: block;
+    margin-left: 60px;
+}
+.hero-rank-movie{
+    color: green;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 60px;
+}
+.hero-season{
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    margin-left: 60px;
+}
+.join-prime-hero{
+    background-color: #33363d;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+}
+.join-prime-hero:hover{
+    background-color: rgb(73, 73, 236);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: none;
+}
+.add-bag{
+    color: white;
+    font-size: 40px;
+}
+.info-bag{
+    color: white;
+    font-size: 40px;
+}
+.check-hero{
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.ri-check-line{
+    background-color: rgb(73, 73, 236);
+    border-radius: 50px;
+}
