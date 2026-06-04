@@ -21,6 +21,7 @@ nav {
 .nav-bar {
   position: absolute;
   position: fixed;
+  z-index: 900;
   width: 90%;
   height: 60px;
   display: flex;
@@ -28,12 +29,44 @@ nav {
   justify-content: space-between;
   padding: 0 20px;
   border-radius: 0px 0px 10px 10px;
+  background-color: rgba(0, 0, 0,0.2);
+  backdrop-filter: blur(10px);
 }
-.nav-bar a,.Vertical {
+.nav-bar a,.Vertical{
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 8px;
+  font-size: 16px;
+}
+.user-button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+.user-dropdown {
+    position: absolute;
+    top: 140%;
+    right: 0;
+    width: 150px;
+    height: 190px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.632);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.user-button:hover + .user-dropdown,
+.user-dropdown:hover {
+    opacity: 1;
+    visibility: visible;
 }
 .left-nav > img{
     height: 20px;
@@ -46,6 +79,7 @@ nav {
 .right-nav {
     display: flex;
     align-items: center;
+    position: relative;
 }
 .ri-gallery-view-2{
     margin-right: 5px;
@@ -100,48 +134,47 @@ nav {
     border-radius: 50px;
 }
 .hero{
-  height: 95%;
+  height: 80%;
   background-image: url(https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_SpiderNoir_S1/41d6d8a9-d08a-400a-bf0c-43b6431decb6._UR3840,1440_SX2160_FMwebp_.jpeg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-content{
-    padding: 0 0 50px;
+    /* padding: 0 0 0px; */
     height: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin-top: 20px;
 }
 .hero-prime-logo{
     height: 35px;
     display: block;
-    margin-left: 60px;
 }
 .hero-Movie-name{
     height: 180px;
     display: block;
-    margin-left: 60px;
 }
 .hero-rank-movie{
     color: green;
     font-size: 20px;
     padding: 20px;
-    margin-left: 60px;
 }
 .hero-season{
     color: white;
     font-size: 18px;
     padding: 5px;
-    margin-left: 60px;
 }
 .join-prime-hero{
     background-color: #33363d;
     color: white;
     padding: 15px 30px;
     border-radius: 8px;
-    margin-left: 60px;
     margin-top: 10px;
     font-size: 15px;
     border: none;
@@ -152,7 +185,6 @@ nav {
     color: white;
     padding: 15px 30px;
     border-radius: 8px;
-    margin-left: 60px;
     margin-top: 10px;
     font-size: 15px;
     border: none;
@@ -168,10 +200,56 @@ nav {
 .check-hero{
     color: white;
     font-size: 15px;
-    margin-left: 50px;
-    padding: 10px;
+    margin-top: 10px;
 }
 .ri-check-line{
     background-color: rgb(73, 73, 236);
     border-radius: 50px;
+}
+.movie-section{
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    
+}
+ .movie-section-header{
+    margin: 20px 5px;
+    position: relative;
+} 
+.hero-group-box{
+    width: 90%;
+    height: 100%;
+}
+.hero-1,.hero-2,.hero-3,.hero-4{
+    height: 80px;
+    width: 80px;
+    margin-top: 50px;
+}
+.hero-movie-image{
+    position: absolute;
+    left: 55px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.25);
+    box-shadow: -20px 0px 30px rgba(0, 0, 0, 0.9),-40px 0px 50px rgba(0, 0, 0, 0.7);
+}
+.hero-movie-image:hover{
+    transform: scale(1.2);
+}
+.movie-section-content{
+    display: flex;
+    gap: 290px;
+}
+.romance-movie-header{
+    margin: 60px 10px;
+    color: white;
+}
+.romance-movie-section{
+    display: flex;
+}
+.romance-movie{
+    margin: 20px 4px;
+    transition: 0.3s;
+}
+.romance-movie:hover{
+    transform: scale(1.2);
 }
