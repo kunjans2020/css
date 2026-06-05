@@ -49,10 +49,10 @@ nav {
 }
 .user-dropdown {
     position: absolute;
-    top: 140%;
-    right: 0;
-    width: 150px;
-    height: 190px;
+    top: 130%;
+    right: -40px;
+    width: 180px;
+    height: 210px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.632);
     border-radius: 10px;
@@ -62,6 +62,17 @@ nav {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.user-dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.user-dropdown a:hover {
+    background-color: rgb(73, 73, 236);
+    color: white;
 }
 .user-button:hover + .user-dropdown,
 .user-dropdown:hover {
@@ -210,11 +221,13 @@ nav {
     color: white;
     font-size: 15px;
     margin: 10px;
+
     
 }
  .movie-section-header{
+    height: 168px;
     margin: 20px 5px;
-    position: relative;
+    position: relative;  
 } 
 .hero-group-box{
     width: 90%;
@@ -227,29 +240,42 @@ nav {
 }
 .hero-movie-image{
     position: absolute;
-    left: 55px;
+    left: 65px;
     transition: 0.3s;
     color: rgba(255, 255, 255, 0.25);
     box-shadow: -20px 0px 30px rgba(0, 0, 0, 0.9),-40px 0px 50px rgba(0, 0, 0, 0.7);
+    
 }
 .hero-movie-image:hover{
     transform: scale(1.2);
 }
 .movie-section-content{
     display: flex;
-    gap: 290px;
+    overflow-x: scroll;
+    gap: 22%;
+    scrollbar-width: none;
+}
+.movie-section-header{
+    /* width: 50px; */
+    /* margin-right: 150px; */
 }
 .romance-movie-header{
-    margin: 60px 10px;
+    margin: 50px 10px;
     color: white;
 }
 .romance-movie-section{
+    width: 100%;
     display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
 .romance-movie{
-    margin: 20px 4px;
+    width: 300px;
+    height: 168px;
+    margin: 15px 10px;
     transition: 0.3s;
+    /* overflow: hidden; */
 }
-.romance-movie:hover{
+.romance-movie img:hover{
     transform: scale(1.2);
 }
