@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Amazon Ember';
-  src: url('Assets/fonts/Amazon\ Ember.ttf') format('truetype');
+  font-family: "Amazon Ember";
+  src: url("Assets/fonts/Amazon\ Ember.ttf") format("truetype");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Amazon Ember'
+  font-family: "Amazon Ember";
 }
 body {
   width: 100%;
@@ -14,9 +14,9 @@ body {
   background-color: rgb(1, 1, 30);
 }
 nav {
-    display: flex;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 .nav-bar {
   position: absolute;
@@ -29,10 +29,11 @@ nav {
   justify-content: space-between;
   padding: 0 20px;
   border-radius: 0px 0px 10px 10px;
-  background-color: rgba(0, 0, 0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
 }
-.nav-bar a,.Vertical{
+.nav-bar a,
+.Vertical {
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -40,111 +41,162 @@ nav {
   font-size: 16px;
 }
 .user-button{
-    background-color: transparent;
-    border: none;
-    color: white;
-    padding: 10px;
-    border-radius: 50px;
-    font-size: 16px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
 }
 .user-dropdown {
-    position: absolute;
-    top: 130%;
-    right: -40px;
-    width: 180px;
-    height: 210px;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.632);
-    border-radius: 10px;
-    backdrop-filter: blur(20px);
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+  position: absolute;
+  top: 130%;
+  right: -40px;
+  width: 180px;
+  height: 280px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.632);
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 .user-dropdown a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.user-dropdown p{
+    color: rgb(97, 94, 94);
+    padding: 20px 10px;
 }
 .user-dropdown a:hover {
-    background-color: rgb(73, 73, 236);
-    color: white;
+  background-color: rgb(73, 73, 236);
+  color: white;
 }
 .user-button:hover + .user-dropdown,
 .user-dropdown:hover {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
-.left-nav > img{
-    height: 20px;
-    margin-right: 10px;
+.save-button{
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+.save-dropdown {
+  position: absolute;
+  top: 130%;
+  right: -40px;
+  width: 160px;
+  height: 190px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.632);
+  border-radius: 10px;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+.save-dropdown a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.save-dropdown a:hover {
+  background-color: rgb(73, 73, 236);
+  color: white;
+}
+.save-button:hover + .save-dropdown,
+.save-dropdown:hover {
+  opacity: 1;
+  visibility: visible;
+}
+.left-nav > img {
+  height: 20px;
+  margin-right: 10px;
 }
 .left-nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .right-nav {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.ri-gallery-view-2{
-    margin-right: 5px;
+.ri-gallery-view-2 {
+  margin-right: 5px;
 }
-.prime-logo:hover{
-    background-color: rgb(63, 63, 241);
+.prime-logo:hover {
+  background-color: rgb(63, 63, 241);
 }
-.prime{
-    height: 20px;
+.prime {
+  height: 20px;
 }
-.prime-logo{
-    height: 40px;
-    width: 70px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.prime-logo {
+  height: 40px;
+  width: 70px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.left-nav a:hover{
-    background-color: rgb(245, 245, 245);
-    color: black;
+.left-nav a:hover {
+  background-color: rgb(245, 245, 245);
+  color: black;
 }
-.ri-search-line,.ri-grid-fill{
-    padding: 10px;
-    border-radius: 50px;
+.ri-search-line,
+.ri-grid-fill {
+  padding: 10px;
+  border-radius: 50px;
 }
-.ri-search-line:hover,.ri-grid-fill:hover{
-    background-color: rgb(245, 245, 245);
-    color: black;
-    padding: 10px;
-    border-radius: 50px;
+.ri-search-line:hover,
+.ri-grid-fill:hover {
+  background-color: rgb(245, 245, 245);
+  color: black;
+  padding: 10px;
+  border-radius: 50px;
 }
-.ri-bookmark-line{
-    padding: 10px;
-    border-radius: 50px;
+.ri-bookmark-line {
+  padding: 10px;
+  border-radius: 50px;
 }
-.ri-bookmark-line:hover{
-    background-color: rgb(245, 245, 245);
-    color: black;
-    padding: 10px;
-    border-radius: 50px;
+.ri-bookmark-line:hover {
+  background-color: rgb(245, 245, 245);
+  color: black;
+  padding: 10px;
+  border-radius: 50px;
 }
-.ri-user-line{
-    padding: 10px;
-    border-radius: 50px;
+.ri-user-line {
+  padding: 10px;
+  border-radius: 50px;
 }
-.ri-user-line:hover{
-    background-color: rgb(73, 73, 236);
-    color: black;
-    padding: 10px;
-    border-radius: 50px;
+.ri-user-line:hover {
+  background-color: rgb(73, 73, 236);
+  color: black;
+  padding: 10px;
+  border-radius: 50px;
 }
-.hero{
+.hero {
   height: 80%;
   background-image: url(https://m.media-amazon.com/images/S/sonata-images-prod/PV_IN_SpiderNoir_S1/41d6d8a9-d08a-400a-bf0c-43b6431decb6._UR3840,1440_SX2160_FMwebp_.jpeg);
   background-size: cover;
@@ -153,129 +205,131 @@ nav {
   justify-content: center;
 }
 
-.hero-content{
-    /* padding: 0 0 0px; */
-    height: 100%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin-top: 20px;
+.hero-content {
+  /* padding: 0 0 0px; */
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 20px;
 }
-.hero-prime-logo{
-    height: 35px;
-    display: block;
+.hero-prime-logo {
+  height: 35px;
+  display: block;
 }
-.hero-Movie-name{
-    height: 180px;
-    display: block;
+.hero-Movie-name {
+  height: 180px;
+  display: block;
 }
-.hero-rank-movie{
-    color: green;
-    font-size: 20px;
-    padding: 20px;
+.hero-rank-movie {
+  color: green;
+  font-size: 20px;
+  padding: 20px;
 }
-.hero-season{
-    color: white;
-    font-size: 18px;
-    padding: 5px;
+.hero-season {
+  color: white;
+  font-size: 18px;
+  padding: 5px;
 }
-.join-prime-hero{
-    background-color: #33363d;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    margin-top: 10px;
-    font-size: 15px;
-    border: none;
-    margin-right: 10px;
+.join-prime-hero {
+  background-color: #33363d;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 15px;
+  border: none;
+  margin-right: 10px;
 }
-.join-prime-hero:hover{
-    background-color: rgb(73, 73, 236);
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    margin-top: 10px;
-    font-size: 15px;
-    border: none;
+.join-prime-hero:hover {
+  background-color: rgb(73, 73, 236);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 15px;
+  border: none;
 }
-.add-bag{
-    color: white;
-    font-size: 40px;
+.add-bag {
+  color: white;
+  font-size: 40px;
 }
-.info-bag{
-    color: white;
-    font-size: 40px;
+.info-bag {
+  color: white;
+  font-size: 40px;
 }
-.check-hero{
-    color: white;
-    font-size: 15px;
-    margin-top: 10px;
+.check-hero {
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
 }
-.ri-check-line{
-    background-color: rgb(73, 73, 236);
-    border-radius: 50px;
+.ri-check-line {
+  background-color: rgb(73, 73, 236);
+  border-radius: 50px;
 }
-.movie-section{
-    color: white;
-    font-size: 15px;
-    margin: 10px;
-
-    
+.movie-section {
+  color: white;
+  font-size: 15px;
+  margin: 10px;
 }
- .movie-section-header{
-    height: 168px;
-    margin: 20px 5px;
-    position: relative;  
-} 
-.hero-group-box{
-    width: 90%;
-    height: 100%;
+.movie-section-header {
+  height: 168px;
+  margin: 20px 5px;
+  position: relative;
 }
-.hero-1,.hero-2,.hero-3,.hero-4{
-    height: 80px;
-    width: 80px;
-    margin-top: 50px;
+.hero-group-box {
+  width: 90%;
+  height: 100%;
 }
-.hero-movie-image{
-    position: absolute;
-    left: 65px;
-    transition: 0.3s;
-    color: rgba(255, 255, 255, 0.25);
-    box-shadow: -20px 0px 30px rgba(0, 0, 0, 0.9),-40px 0px 50px rgba(0, 0, 0, 0.7);
-    
+.hero-1,
+.hero-2,
+.hero-3,
+.hero-4 {
+  height: 80px;
+  width: 80px;
+  margin-top: 50px;
 }
-.hero-movie-image:hover{
-    transform: scale(1.2);
+.hero-movie-image {
+  position: absolute;
+  left: 65px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.25);
+  box-shadow:
+    -20px 0px 30px rgba(0, 0, 0, 0.9),
+    -40px 0px 50px rgba(0, 0, 0, 0.7);
 }
-.movie-section-content{
-    display: flex;
-    overflow-x: scroll;
-    gap: 22%;
-    scrollbar-width: none;
+.hero-movie-image:hover {
+  transform: scale(1.2);
 }
-.movie-section-header{
-    /* width: 50px; */
-    /* margin-right: 150px; */
+.movie-section-content {
+  display: flex;
+  overflow-x: scroll;
+  gap: 22%;
+  scrollbar-width: none;
 }
-.romance-movie-header{
-    margin: 50px 10px;
-    color: white;
+.movie-section-header {
+  /* width: 50px; */
+  /* margin-right: 150px; */
 }
-.romance-movie-section{
-    width: 100%;
-    display: flex;
-    overflow-x: scroll;
-    scrollbar-width: none;
+.romance-movie-header {
+  margin: 50px 10px;
+  color: white;
 }
-.romance-movie{
-    width: 300px;
-    height: 168px;
-    margin: 15px 10px;
-    transition: 0.3s;
-    /* overflow: hidden; */
+.romance-movie-section {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
-.romance-movie img:hover{
-    transform: scale(1.2);
+.romance-movie {
+  width: 300px;
+  height: 168px;
+  margin: 15px 10px;
+  transition: 0.3s;
+  /* overflow: hidden; */
+}
+.romance-movie img:hover {
+  transform: scale(1.2);
 }
