@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    /* background:black; */
+}
+
+main{
+    width:100%;
+    height:90vh;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUUQUvaqGSaRj1Ykazd3PMCabz37jPQRT4-QqykZet--ae5laIYV1gsUx&s=10);
+    position:relative;
+    repeat:no-repeat;
+    background-size:cover;
+}
+.blur-effect {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* box-shadow: 50px 30px 40px 90px black; */
+}
+header{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h2{
+    color:white;
+    font-size:32px;
+    font-weight:700;
+    line-height:1;
+}
+
+.logo span{
+    color:white;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:rgb(219, 102, 119);
+}
+
+.right-nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.right-nav i{
+    color:white;
+}
+
+.quote-btn{
+    background:rgb(219, 102, 119);
+    color:white;
+    padding:14px 26px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+}
+.content{
+    position:absolute;
+    right:8%;
+    top:50%;
+    transform:translateY(-50%);
+    color:white;
+}
+
+.content h1{
+    font-size:72px;
+    line-height:1.15;
+    font-weight:800;
+    margin-bottom:40px;
+    text-align:right;
+}
+
+.buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:18px 42px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.pink{
+    background:rgb(219, 102, 119);
+    color:white;
+}
+
+.white{
+    background:white;
+    color:rgb(219, 102, 119);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+.slider-btn{
+    position:absolute;
+    left:30px;
+    width:55px;
+    height:55px;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+}
+
+.slider-btn i{
+    color:rgb(219, 102, 119);
+    font-size:22px;
+}
+
+.slider-btn.left{
+    top:45%;
+}
+
+.slider-btn.right{
+    top:55%;
+}
+
+.slider-btn:hover{
+    background:rgb(243, 77, 102);
+}
+
+.slider-btn:hover i{
+    color:white;
+}
+
+.text{
+    height:60vh;
+    background:rgba(255, 255, 255, 0.5);
+}
