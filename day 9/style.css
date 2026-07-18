@@ -145,13 +145,11 @@ nav {
   border-radius: 10px;
   min-height: 150px;
   align-items: center;
-  transition: 1.3s;
-  overflow: hidden;
+  transition: 1.1s;
 }
 .leave-card:hover {
   transform: scale(1.1);
 }
-
 .leave-left {
   display: flex;
   gap: 10px;
