@@ -17,6 +17,28 @@
             monthlySalary: 75000
         },
 
+        employee: {
+            id: "EMP-1002",
+            name: "Vikash Singh",
+            role: "Full Stack Developer",
+            department: "Engineering",
+            joiningDate: "2024-04-15",
+            shiftStart: "09:00",
+            shiftEnd: "18:00",
+            monthlySalary: 85000
+        },
+
+         employee: {
+            id: "EMP-1003",
+            name: "Suresh Kumar",
+            role: "Full Stack Developer",
+            department: "Engineering",
+            joiningDate: "2024-04-15",
+            shiftStart: "09:00",
+            shiftEnd: "18:00",
+            monthlySalary: 65000
+        },
+
         leaveBalances: {
             annual: {
                 label: "Annual Leave",
